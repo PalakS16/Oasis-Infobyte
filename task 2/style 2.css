@@ -1,0 +1,382 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    border: none;
+    outline: none;
+}
+@font-face {
+    font-family: 'Autumn Romans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Autumn Romans Regular'), url('AutumnRomans-AL3B7.woff') format('woff');
+}
+@font-face{
+    font-family: "MARDE SAUVE";
+    src: url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.eot");
+    src: url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/cb800d70d61e45e07c11a9c4f64bcf63.svg#MARDE SAUVE")format("svg");
+}
+@font-face {
+    font-family: "Rockinsoda";
+    src: url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.eot");
+    src: url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c6c62ba1cb0dac8b08b78d628aceed14.svg#Rockinsoda")format("svg");
+}
+@font-face {
+    font-family: "Italo Medium";
+    src: url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.eot");
+    src: url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/7ff7ba864b6c03dbcb90c7c3dceaa0a0.svg#Italo Medium")format("svg");
+}
+@font-face {
+    font-family: "Simplicity";
+    src: url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.eot");
+    src: url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4bc0919526739935f2043fa2a0ce0798.svg#Simplicity")format("svg");
+}
+@font-face {
+    font-family: "AutherTypeface";
+    src: url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.eot");
+    src: url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/fcb7bd3ed4d79ca024f0d440b1cc78f1.svg#AutherTypeface")format("svg");
+}
+@font-face {
+    font-family: "Banaue";
+    src: url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.eot");
+    src: url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/ceb2eae83df2801f9ae1ac4decadbf6d.svg#Banaue")format("svg");
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0px 0px 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    height: 70px;
+}
+.texthome h2{
+    font-size: 1rem;
+    font-weight: 780;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+.texthome h4{
+    font-size: 0.9rem;
+    font-weight: 50;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-right: 50px;
+    margin-left: 25px;
+    margin-top: 2px;
+}
+.headerbar a {
+    position: relative;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 20px;
+    padding-left: 19px; 
+    padding-top: 7px;
+    font-family: 'DM Sans', sans-serif;
+}
+.headerbar a:hover,
+.headerbar a:is(:link, :active, :visited).active {
+color: white;
+font-weight: 780;
+font-size: 1.13rem;
+text-decoration: none;
+}
+.headerbar a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 123%;
+    height: 120%;
+    background: rgba(255, 255, 255,0.2);
+    z-index: -1;
+    transform: scale(0);
+    opacity: 0;
+    transition: .4s;
+    border-radius: 2px;
+}
+.headerbar a:hover span,
+.headerbar a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+.homepage {
+    height: 880px;
+    width: 100%;
+    background-image: linear-gradient(to top,#fda34b 0%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 100%);
+}
+.content{
+    font-size: 1rem;
+    font-weight: 500;
+    z-index: -1;
+}
+.maintext{
+    padding-top: 100px;
+    padding-left: 500px;
+}
+.maintext h1{
+    color: white;
+    border: #fda34b;
+    font-family: "Rockinsoda";
+    font-size: 130px;
+    letter-spacing: 15px;
+    text-shadow: -1px 1px 0 #fda34b, 
+                          3px 3px 0 #fda34b, 
+                         3px -3px 0 #fda34b, 
+                        -3px -3px 0 #fda34b; 
+}
+.maintext h2{
+    color: #fda34b;
+    font-family: "Banaue";
+    font-size: 79px;
+    margin-left: -6px;
+    margin-top: -10px;
+    letter-spacing: 3px;
+} 
+.maintext h3{
+    color: white;
+    font-family: "Italo Medium";
+    font-size: 55px;
+    font-weight: 5px;
+    margin-top: 7px;
+    letter-spacing: 3px;
+}
+.maintext h4{
+    color: white;
+    font-family: "Italo Medium";
+    font-size: 35px;
+    font-weight: 2px;
+    margin-top: 17px;
+    letter-spacing: 3px;
+    margin-left: -6px;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255,1);
+    margin-top: 27px;
+    margin-left: -10px;
+    border: 3px solid #fda34b;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    transition: all ease .5s;
+    color: #0c1db8;
+    text-decoration: none;
+}
+.btn:hover{
+    transform: translateX(2px);
+    background: transparent;
+    color: white;
+    background-color: #fda34b;
+}
+.About{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    background-color: #fda34b;
+    gap: 1rem;
+    padding: 150px 150px;
+    color: white;
+}
+.about_img{
+    width: 100%;
+    height: auto;
+    margin-top: 45px;
+    margin-left: 7px;
+}
+.about_text{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.about_text h2{
+    color: #7046aa;
+    font-family: "Rockinsoda";
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-shadow: -1px 1px 0 hsl(0, 0%, 100%), 
+                          1px 1px 0 #ffffff, 
+                         1px -1px 0 #ffffff, 
+                        -1px -1px 0 #ffffff; 
+}
+.about_text h4{
+    margin-top: 11px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+.about_text span{
+    color: #de3163;
+    font-family: 'Inter', sans-serif;
+}
+.about_text p{
+    margin-top: 8px;
+    font-weight: 1px;
+    line-height: 25px;
+}
+.Services{
+    background-color: #fda34b;
+    color: white;
+    padding: 290px 120px;
+    
+}
+.services_text h2{
+    text-align: center;
+    margin-top: -100px;
+    font-family: "Rockinsoda";
+    color: #0c1db8;
+    font-size: 60px;
+    letter-spacing: 3px;
+    text-shadow: -1px 1px 0 hsl(0, 0%, 100%), 
+                          1px 1px 0 #ffffff, 
+                         1px -1px 0 #ffffff, 
+                        -1px -1px 0 #ffffff;
+}
+.service_list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    align-items: center;
+    gap: 2.2rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.service_box{
+    padding: 35px 30px;
+    background: rgba(255, 255, 255,0.4);
+    border-radius: 6px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all ease .50s;
+}
+.service_box i{
+    font-size: 40px;
+    color: #ffffff;
+    margin-bottom: 3px;
+    font-family: 'Inter', sans-serif;
+}
+.service_box h3{
+    font-size: 18px;
+    font-weight: 2px;
+    margin-bottom: 11px; 
+    font-family: 'Inter', sans-serif;
+    color: #de3163;   
+}
+.service_box p{
+    color: rgba(255, 255, 255,0.7);
+    font-size: 15px;
+    line-height: 22px;
+}
+.rm_button{
+    display: inline-block;
+    padding: 9px 29px;
+    background-color: #de3163;
+    margin-top: 17px;
+    color: white;
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    border: 1px solid #de3163 ;
+    transition: all ease .50s;
+    text-decoration: none;
+}
+.rm_button:hover{
+    transform: scale(1.1);
+    background: transparent;
+    border: 2px solid #de3163;
+    color: #de3163;
+    font-weight: 900;
+    font-family: 'DM Sans', sans-serif;
+}
+.service_box:hover{
+    transform: translateY(-8px);
+    border: 2px solid white  ;
+}
+.Contact{
+    background-color: #fda34b;
+    padding: 200px 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 5rem;
+}
+.left_contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 4rem;
+}
+.in i{
+    color: #0c1db8;
+    opacity: 0.7;
+    font-size: 80px;
+    margin-bottom: 15px;
+    transition: all ease .40s;
+}
+.in i:hover{
+    opacity: 500;
+    cursor: pointer;  
+}
+.in h4{
+   font-size: 27px; 
+   font-weight: 600;
+   letter-spacing: 1px;
+   font-family: 'DM Sans', sans-serif;
+}
+.right_Contact h2{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    color: #0c1db8;
+}
+.right_Contact a{
+    display: inline-block;
+    color: #de3163;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    padding: 3px 0;
+    transition: all ease .40s;
+}
+.right_Contact a:hover{
+    transform: translateY(-5px);
+}
+.right_Contact p{
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    font-family: 'DM Sans', sans-serif;
+}
